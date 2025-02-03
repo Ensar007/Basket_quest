@@ -403,3 +403,11 @@ def warriors_rutin():
         print("Nu är du redo för att träna.")
         print("Du tar dig till träningsplatsen.")
 
+print("Din tränare ropar på alla i laget och pratar med er.")
+        print("Han säger att imorgon kommer ni möta den bästa basketspelaren, LeBron James.")
+        val = input("Vill du träna hela dagen eller gå hem och ta det lugnt? (träna/gå hem): ").lower()
+
+        if val == "träna":
+            print("Du tränar hela dagen, och är redo och peppad till morgondagens match")
+            sista_dagen()
+
