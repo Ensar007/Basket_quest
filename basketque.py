@@ -286,3 +286,104 @@ def fira_seger():
     else:
         print("Ogiltigt val. Försök igen.")
         fira_seger()
+def dag4():
+    print("\nDag 4: En ny dag börjar. Du vaknar upp trött efter gårdagens firande.")
+    print("Din tränare ringer dig.")
+    print("1. Svara på samtalet")
+    print("2. Ignorera samtalet")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("\nTränaren ger dig viktig information och ber dig att möta honom.")
+        träffa_tränare()
+    elif choice == "2":
+        print("Du ignorerade samtalet och missade viktig information. Slut på spelet.")
+        dag5()
+    else:
+        print("Ogiltigt val. Försök igen.")
+        dag4()
+
+def träffa_tränare():
+    print("\nDu träffar tränaren och får veta om kommande matcher och möjligheter.")
+    print("Vad vill du göra?")
+    print("1. Förbered dig för nästa steg")
+    print("2. Skjuta upp det till senare")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("Du förbereder dig för framtiden och är redo för nya utmaningar.!")
+        dag5()
+    elif choice == "2":
+        print("Du skjuter upp det och missar en viktig möjlighet.")
+        dag5()
+    else:
+        print("Ogiltigt val. Försök igen.")
+        träffa_tränare()
+
+# Starta spelet
+
+
+def dag5():
+    print("\nDag 5: Du har blivit scoutad av ett NBA-lag och behöver ta dig till USA!")
+    print("Vad vill du göra först?")
+    print("1. Hälsa på laget och berätta informationen för dem")
+    print("2. Boka ett flyg direkt och förbereda dig")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("Du hälsar på laget, delar nyheten och går hem för att förbereda dig.")
+    elif choice == "2":
+        print("Du bokar ett flyg och börjar packa inför resan.")
+    else:
+        print("Ogiltigt val. Försök igen.")
+        dag5()
+        return
+
+    print("\nDu anländer till USA och märker att två personer väntar på dig.")
+    print("De representerar två NBA-lag som vill värva dig.")
+    print("Vilket lag väljer du?")
+    print("1. Brooklyn Nets")
+    print("2. Golden State Warriors")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("Du valde Brooklyn Nets. De tar dig till deras träningsplats för att börja.")
+        nets_rutin()
+    elif choice == "2":
+        print("Du valde Golden State Warriors. De tar dig till deras träningsplats för att börja.")
+        warriors_rutin()
+    else:
+        print("Ogiltigt val. Försök igen.")
+        dag5()
+
+def nets_rutin():
+    print("\nDu anländer till Brooklyn Nets träningsplats.")
+    print("Vad vill du göra först?")
+    print("1. Gå direkt till träningsplanen")
+    print("2. Gå på en intervju och svara på frågor")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("Du börjar träna direkt och imponerar på dina nya lagkamrater. Spelet slutar här!")
+    elif choice == "2":
+        print("Du svarar på frågor och lär känna dina lagkamrater bättre. Spelet slutar här!")
+    else:
+        print("Ogiltigt val. Försök igen.")
+        nets_rutin()
+
+def warriors_rutin():
+    print("\nDu anländer till Golden State Warriors träningsplats.")
+    print("Vad vill du göra först?")
+    print("1. Gå direkt till träningsplanen")
+    print("2. Gå på en intervju och svara på frågor")
+
+    choice = input("Välj ett alternativ (1/2): ")
+    if choice == "1":
+        print("Du börjar träna direkt och imponerar på dina nya lagkamrater. Spelet slutar här!")
+        dag_sex()
+    elif choice == "2":
+        print("Du svarar på frågor och lär känna dina lagkamrater bättre. Spelet slutar här!")
+        dag_sex()
+    else:
+        print("Ogiltigt val. Försök igen.")
+        warriors_rutin()
