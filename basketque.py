@@ -422,4 +422,19 @@ def warriors_rutin():
     if problem == "laga":
         print("Du misslyckades att laga bilen och missade matchen. SLUT.")
         return
+    
+    elif problem == "buss":
+        print("Du tog bussen och kommer fram till matchen i tid, men du måste gå direkt till planen.")
+
+    
+    print("\nDet har varit en seg match, men i 3:e quartern får du en chans att göra skillnad.")
+    strategi = input("Vill du dribbla förbi eller försöka skjuta en 3-poängare? (dribbla/3-poängare): ").lower()
+
+    if strategi == "dribbla":
+        print("Du dribblar förbi en hoppande LeBron James, men din passning blockeras!")
+        print("Du blir utbytt och sätts på bänken eftersom du är trött.")
+    elif strategi == "3-poängare":
+        print("Du försöker skjuta en 3-poängare, men LeBron James blockerar ditt skott.")
+        print("Du blir utbytt och sätts på bänken.")
+
 
