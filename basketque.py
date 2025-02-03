@@ -437,4 +437,18 @@ def warriors_rutin():
         print("Du försöker skjuta en 3-poängare, men LeBron James blockerar ditt skott.")
         print("Du blir utbytt och sätts på bänken.")
 
+    
+    print("\nSista quartern: Du kommer tillbaka med 30 sekunder kvar.")
+    print("Du har redan gjort 20 poäng och 5 assists!")
+    sista_chans = input("Vill du ta ett sista skott eller passa bollen? (skott/passa): ").lower()
+
+    if sista_chans == "skott":
+        print("Du skjuter och... du träffar! Du vinner matchen! DU  HISTORIA!")
+    elif sista_chans == "passa":
+        print("Du passar till en lagkamrat som dunkar! Du vinner matchen! och får berömm av att du har bra lag spel och ditt lag gjorde historia!")
+
+
+start_game()
+
+
 
