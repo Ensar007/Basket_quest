@@ -386,12 +386,12 @@ def warriors_rutin():
         dag_sex()
     else:
         print("Ogiltigt val. Försök igen.")
-       warriors_rutin()        
+        warriors_rutin()        
     
     def dag_sex():
-    print("Dag 6 börjar!")
-    print("Du vaknar och är jättepeppad.")
-    val = input("Vill du gå direkt till träningsplatsen? (ja/nej): ").lower()
+        print("Dag 6 börjar!")
+        print("Du vaknar och är jättepeppad.")
+        val = input("Vill du gå direkt till träningsplatsen? (ja/nej): ").lower()
 
     if val == "ja":
         print("Du går direkt till träningsplatsen.")
@@ -412,19 +412,18 @@ def warriors_rutin():
 
 
     def sista_dagen():
-    print("Sista dagen är här!")
-    print("Det är dags att möta den bästa basketspelaren och skapa historia.")
+        print("Sista dagen är här!")
+        print("Det är dags att möta den bästa basketspelaren och skapa historia.")   
+        print("\nDu har redan gjort allt du behöver och är på väg till matchplanen.")
 
-   
-    print("\nDu har redan gjort allt du behöver och är på väg till matchplanen.")
-    problem = input("Din bil stannar mitt på vägen! Vill du försöka laga bilen eller ta bussen? (laga/buss): ").lower()
+        problem = input("Din bil stannar mitt på vägen! Vill du försöka laga bilen eller ta bussen? (laga/buss): ").lower()
 
     if problem == "laga":
-        print("Du misslyckades att laga bilen och missade matchen. SLUT.")
-        return
+         print("Du misslyckades att laga bilen och missade matchen. SLUT.")
+         return
     
     elif problem == "buss":
-        print("Du tog bussen och kommer fram till matchen i tid, men du måste gå direkt till planen.")
+         print("Du tog bussen och kommer fram till matchen i tid, men du måste gå direkt till planen.")
 
     
     print("\nDet har varit en seg match, men i 3:e quartern får du en chans att göra skillnad.")
@@ -438,9 +437,9 @@ def warriors_rutin():
         print("Du blir utbytt och sätts på bänken.")
 
     
-    print("\nSista quartern: Du kommer tillbaka med 30 sekunder kvar.")
-    print("Du har redan gjort 20 poäng och 5 assists!")
-    sista_chans = input("Vill du ta ett sista skott eller passa bollen? (skott/passa): ").lower()
+        print("\nSista quartern: Du kommer tillbaka med 30 sekunder kvar.")
+        print("Du har redan gjort 20 poäng och 5 assists!")
+        sista_chans = input("Vill du ta ett sista skott eller passa bollen? (skott/passa): ").lower()
 
     if sista_chans == "skott":
         print("Du skjuter och... du träffar! Du vinner matchen! DU  HISTORIA!")
