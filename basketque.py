@@ -386,4 +386,20 @@ def warriors_rutin():
         dag_sex()
     else:
         print("Ogiltigt val. Försök igen.")
-        warriors_rutin()
+       warriors_rutin()        
+    
+    def dag_sex():
+    print("Dag 6 börjar!")
+    print("Du vaknar och är jättepeppad.")
+    val = input("Vill du gå direkt till träningsplatsen? (ja/nej): ").lower()
+
+    if val == "ja":
+        print("Du går direkt till träningsplatsen.")
+        print("Slut på dag 6.")
+        sista_dagen()
+        return
+    elif val == "nej":
+        print("Du äter frukost.")
+        print("Nu är du redo för att träna.")
+        print("Du tar dig till träningsplatsen.")
+
